@@ -1,0 +1,22 @@
+
+type time
+============
+"Immediate or Cancel" (IOC): 
+This type of order will be executed immediately at the best available price, and any portion of the order that cannot be filled immediately will be cancelled.
+
+"Fill or Kill" (FOK): 
+This type of order will be executed immediately and completely, or cancelled if it cannot be filled immediately.
+
+"Good Till Cancelled" (GTC): 
+This type of order will remain active until it is either filled or cancelled by the trader.
+
+"Good Till Time" (GTT):
+This type of order will remain active until a specified date and time, or until it is filled or cancelled by the trader.
+
+type filling
+============
+"Fill or Kill" (FOK): 
+This type of order will be executed immediately and completely, or cancelled if it cannot be filled immediately.
+
+"Partial Fill": 
+This type of order will be executed partially if the full order quantity is not available at the requested price. Any unfilled portion of the order will remain active until it can be filled at a later time.
