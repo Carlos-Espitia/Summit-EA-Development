@@ -1,0 +1,81 @@
+{
+  "trades": [
+    {
+      "id": "id here",
+      "takePartials": [
+        { "price": 10, "lot": 5 },
+        { "price": 40, "lot": 54 }
+      ]
+    },
+    {
+      "id": "id here",
+      "takePartials": [
+        { "price": 10, "lot": 5 },
+        { "price": 40, "lot": 54 }
+      ]
+    },
+    {
+      "id": 2128574603,
+      "takePartials": [
+        { "price": 10, "lot": 5 },
+        { "price": 40, "lot": 54 }
+      ]
+    },
+    {
+      "id": 2128576255,
+      "takePartials": [
+        { "price": 10, "lot": 5 },
+        { "price": 40, "lot": 54 }
+      ]
+    },
+    {
+      "id": 2128781837,
+      "takePartials": [
+        { "price": 10, "lot": 5 },
+        { "price": 40, "lot": 54 }
+      ]
+    },
+    {
+      "id": 2128784700,
+      "takePartials": [
+        { "price": 10, "lot": 5 },
+        { "price": 40, "lot": 54 }
+      ]
+    },
+    {
+      "id": 2128856314,
+      "takePartials": [
+        { "price": 10, "lot": 5 },
+        { "price": 40, "lot": 54 }
+      ]
+    },
+    {
+      "id": 2128858033,
+      "takePartials": [
+        { "price": 10, "lot": 5 },
+        { "price": 40, "lot": 54 }
+      ]
+    },
+    {
+      "id": 2128866477,
+      "takePartials": [
+        { "price": 10, "lot": 5 },
+        { "price": 40, "lot": 54 }
+      ]
+    },
+    {
+      "id": 2128869319,
+      "takePartials": [
+        { "price": 10, "lot": 5 },
+        { "price": 40, "lot": 54 }
+      ]
+    },
+    {
+      "id": 2128872856,
+      "takePartials": [
+        { "price": 10, "lot": 5 },
+        { "price": 40, "lot": 54 }
+      ]
+    }
+  ]
+}
