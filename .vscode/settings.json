@@ -2,6 +2,7 @@
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
         "*.ts": "typescript",
-        "*.mq5": "cpp"
+        "*.mq5": "cpp",
+        "*.mqh": "cpp"
     }
 }

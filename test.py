@@ -4,16 +4,21 @@
 from datetime import datetime
 import MetaTrader5 as mt5
 from API.API import SummitAPI
-from API.socket import Server
+from API.socket import server
 from typing import List, TypedDict
+import time
+
+from API.utils import Utils
 
 
 # Connect to the MetaTrader 5 terminal
 summitAPI = SummitAPI()
 summitAPI.initialize()
 
-current_price = summitAPI.getSymbolInfoTick("EURUSD").bid
-targets = 0.00050
+
+
+# current_price = summitAPI.getSymbolInfoTick("EURUSD").bid
+# targets = 0.00050
 
 # summitAPI.getSymbolInfo("EURUSD").
 # Notes
@@ -22,20 +27,29 @@ targets = 0.00050
 # Add tp partials
 
 # socket.gethostbyname(socket.gethostname()) # get my hostname and use that to get host ip
-server = Server()
+
+
+# def bob():
+#     print("i sent shit")
+#     server.send("Sent by server")
+
+# Utils.setInterval(bob, 50)
+
 server.start()
 
 
-
 # market order
-# result = summitAPI.trades.execute(
-#     symbol="EURUSD",
-#     orderType=summitAPI.trades.ORDER_TYPE_SELL,
-#     lot=0.3, # doesnt allow whole numbers for some weird reason
-#     takeProfitPartials=[{ 'price': 1.09150, 'lot': 0.1}, { 'price': 1.09100, 'lot': 0.1}] # add checks for it take partials are under or above
-#     # takeProfit=current_price + targets,
-#     # stopLoss=current_price - targets
-# )
+time.sleep(7)
+result = summitAPI.trades.execute(
+    symbol="EURUSD",
+    orderType=summitAPI.trades.ORDER_TYPE_BUY,
+    lot=0.3, # doesnt allow whole numbers for some weird reason
+    takeProfitPartials=[{ 'price': 1.10500, 'lot': 0.1}, { 'price': 1.10600, 'lot': 0.1}], # add checks for it take partials are under or above
+    takeProfit=1.10600,
+    # stopLoss=current_price - targets
+)
+
+
 
 # print(result)
 # limit order

@@ -3,7 +3,10 @@ import os
 import MetaTrader5 as mt5
 import json
 from typing import List, TypedDict
+from API.graphics import Graphics
 from API.utils import Utils
+from API.socket import server
+
 
 # add option to draw on charts
 
@@ -155,6 +158,21 @@ class Trades:
 
                 for partial in takeProfitPartials:
                     print(f"{partial}")
+
+                    
+
+                    # server.send("[G]" + str(partial['price']))
+                    # "[G] {\"type\": \"HLINE\", \"chart_id\": 0, \"name\": \"myLine\", \"sub_window\": 0, \"price\": " + str(partial['price']) + "}"
+
+
+                    Graphics.plot_Hline(price=partial["price"])
+                    
+                    # server.send("[G] {\"type\": \"HLINE\", \"chart_id\": 0, \"name\": \"myLine\", \"sub_window\": 0, \"clr\": \"clrLightPink\", \"width\": 1, \"price\": " + str(partial['price']) + "}")
+                    # server.send("[G] {\"type\": \"HLINE\", \"chart_id\": 0, \"name\": \"myLine\", \"sub_window\": 0, \"price\": " + str(partial['price']) + "}")
+
+
+                    # server.send("[G] HLINE()")
+
 
                     # partialPrice = partial["price"]
 
